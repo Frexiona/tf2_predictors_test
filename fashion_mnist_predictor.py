@@ -23,6 +23,7 @@ model.fit(train_images, train_labels, epochs=5)
 # Parameter in the model predictot should be a LIST
 prediction = model.predict(test_images)
 
+
 # Evaluation
 # test_loss, test_acc = model.evaluate(test_images, test_labels)
 # print('Tested acc:', test_acc)

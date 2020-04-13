@@ -53,6 +53,12 @@ fitModel = model.fit(x_train, y_train, epochs=40,
 
 result = model.evaluate(test_data, test_labels)
 
+# Save model
+model.save('movie_review_predictor_model.h5')
+
+# Import model
+# model.keras.models.load_model('movie_review_predictor_model.h5')
+
 
 def decode_review(text):
     return ' '.join([reverse_word_index.get(i, '?') for i in text])
